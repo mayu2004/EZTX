@@ -1,1 +1,180 @@
+#1 largest among 2 numbers
+"""
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+if a<b:
+    print(b)
+else:
+    print(a)"""
+        
+#2 largest among 3
+"""
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+c=int(input("enter c:"))
+if a>b and a>c:
+       print(a)
+elif b>c:
+       print(b) 
+else:
+       print(c)"""
+         
+#3 smallest among 2
+"""
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+if a<b:
+    print(a)
+else:  
+    print(b)"""
+         
+#4 second largest among 3
+"""
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+c=int(input("enter c:"))
+if a>b and a<c:
+       print(a)
+elif b<c:
+       print(b) 
+else:
+       print(c)"""
 
+'''another method for 4'''
+"""
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+c=int(input("enter c:"))
+if a>b and a>c:
+       a=0
+elif b>c:
+       b=0
+else:
+       c=0
+if a>b and a<c:
+    print(a)
+elif b<c:
+    print(b) 
+else:
+    print(c)"""
+
+#5 sum of 2 numbers
+"""
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+c=a+b
+print(c)"""
+      
+#6 print multiple hello worlds
+"""
+for x in range(1000):
+   print("HELLO WORLD!")"""
+      
+#7 print hello world acc to user input
+"""print ("no.of times:")
+a=int(input())
+for x in range(a):
+   print("HELLO WORLD!")"""
+      
+#8 small large or equal
+"""a=int(input("enter a:"))
+b=int(input("enter b:"))
+if a>b:
+   print("a>b")
+elif a<b:
+   print("b>a")
+else:
+   print("a=b")"""
+#another method for 8
+"""a,b =map(int(input().split()))
+if a>b:
+   print("a>b")
+elif a<b:
+   print("b>a")
+else:
+   print("a=b")"""
+     
+#9 triangle validator(sum of 2 sides must be equal or greater than the 3rd side)
+"""
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+c=int(input("enter c:"))
+if a+b<=c:
+    print("Yes")
+elif b+c<=a:
+    print("Yes")
+elif c+a<=b:
+    print("Yes")
+else:
+    print("No")"""
+      
+#10 divide apples among students
+"""k=int(input("enter no.of students:"))
+m=int(input("enter no.of apples:"))
+tota, x = 0, 1
+    while x >=1 and x <= 20:
+        if x%3==0:
+            continue
+        if x%3 != 0:
+            print(x)
+            x+=1
+            total+=1
+    print(total)
+print(a)"""
+  
+#11 reverse the number
+"""num = int(input("Enter the integer number: "))  
+revs_num = 0  
+while (num > 0):  
+    n = num % 10  
+    revs_num = (revs_num * 10) + n  
+    num = numb// 10  
+print(revs_num)"""
+"""for the above prblm in order to print both statement and answer we use print("The reverse number is : {}".format(revs_number)) """
+
+#12 reverse Negative number
+"""
+n = int(input("Enter the integer number: "))  
+if n>0:
+    res=0
+    while (n > 0):  
+        r = n % 10  
+        res = (res * 10) + r
+        n= n// 10  
+    print(res)
+elif n==0:
+    print(n)
+else:
+    res=0
+    n=n*-1
+    while n > 0:  
+     r = n % 10  
+     res = (res * 10) + r
+     n= n// 10
+    print(-1*res)"""
+      
+#13 watermelon of weight w is to be divided among 2 people size need not be equal but it must be in a equal quantity
+"""
+w=int(input())
+if w%2==0 and w!=2:
+    print("yes")
+else:
+    print("no")
+"""
+      
+#14 If temp is greater than 98 degrees print yes else no
+'''using if else'''
+"""a=int(input("enter temp:"))
+if a>98:
+    print("yes")
+else:
+    print("no")"""
+
+'''using for loop'''
+"""t=int(input())
+for i in range(t):
+ n=int(input())
+ if n>98:
+    print("yes")
+ else:
+    print("No")

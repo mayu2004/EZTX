@@ -1,0 +1,296 @@
+#p1
+
+#even or odd string
+#approach 1
+'''
+s = input()
+n = len(s)
+es = ""
+os = ""
+for i in range(n):
+    if i%2 == 0:
+        es = es +s[i]
+    else:
+        os = os + s[i]
+print(os+es)
+'''
+#approach 2
+'''
+
+s = input()
+n = len(s)
+os = s[1::2]
+es = s[::2]
+print(es+os)
+'''
+
+#approach3
+'''
+s = input()
+print(s[1::2]+s[::2])
+'''
+
+#p2
+#approach 1
+'''
+s = input()
+count=0
+ch = input()
+for i in range(len(s)):
+    if s[i] == ch:
+        count = count+1
+print(count)
+'''
+
+'''
+s = input()
+count=0
+ch = input()
+for i in range(len(s)):
+    if s%2 == 0 and s[i] == ch:
+        count = count+1   
+print(count)
+'''
+
+#p3
+#vowels in a string
+#approach 1
+'''
+s = input()
+v = "aeiouAEIOU"
+c = 0
+for i in s:
+    if i in v:
+        c = c+1
+if c == len(s):    
+      print("yes")
+else:
+      print("no")
+'''      
+
+#approach 2
+'''
+s = input()
+v = "aeiouAEIOU"
+c = 0
+for i in s:
+    if i not in v:
+        c = c+1
+if c==0:
+    print("yes")
+else:
+    print("no")
+'''    
+
+#approach 3
+'''
+s = input()
+v = "aeiouAEIOU"
+for i in s:
+    if i not in v:
+        print("No")
+        break
+else:
+    print("Yes")
+'''
+
+#p4
+#digits in a string
+#approach 1
+'''
+s = input()
+v = "01234566789"
+c = 0
+for i in s:
+    if i in v:
+        c = c+1
+if c==len(s):
+    print("yes")
+else:
+    print("no")
+'''
+#approach2
+'''
+s = input()
+v = "0123456789"
+for i in s:
+    if i not in v:
+    c = c+1
+if c==0:
+    print("No")
+    break
+else:
+    print("Yes")
+'''
+
+#approach 3
+'''
+s = input()
+v = "aeiouAEIOU"
+for i in s:
+    if i not in v:
+        print("No")
+        break
+else:
+    print("Yes")
+'''    
+
+#approach4
+'''
+s = input()
+v = "0123456789"
+if s.isdigit():
+    print ("yes")
+else:
+    print("no")
+'''
+
+#p5
+#count vowels and consonants
+#approach 1
+'''    
+s = input()
+v = "aeiou"
+c = "qwrtypsdfghjklzxcvbnm"
+s = s.lower()
+vc =0
+cc =0
+for i in s:
+    if i in v:
+        vc = vc + 1
+    elif i in c:
+        cc = cc+1
+print(vc,cc)
+'''
+
+#approach 2
+'''s = input()
+vc = 0
+cc = 0
+v = "aeiouaeiou"
+for i in s:
+    if i.isalpha():
+        if i in v:
+            vc = vc + 1
+        else:
+            cc = cc + 1
+print(vc,cc)
+'''
+
+#p6
+#compress a string
+#approach 1
+'''s = input()
+c = 1
+r = ""
+for i in range(1,len(s)):
+    if s[i] == s[i-1]:
+        c = c+1
+        else:
+            r = r+s[i-1]
+'''
+
+
+
+#p7
+#words,vowels and consonants
+
+#approach 1            
+'''t = int(input())
+v = "aeiou"
+for i in range(t):
+    s = list(input().split())
+    vc =0
+    cc =0
+    wc =len(s)
+    for j in s:
+       for k in j:
+          if k.isalpha():
+             if k in v:
+                vc = vc + 1
+             else:
+               cc = cc + 1
+    print(wc,vc,cc)'''
+
+#approach 2
+
+'''t = int(input())
+v = "aeiou"
+for i in range(t):
+    s = input()
+    vc = 0
+    cc = 0
+    wc = len(s)
+    for j in s:
+        if j.isalpha():
+            if j in v:
+                vc = vc + 1
+            else:
+               cc = cc + 1
+    wc = len(s.split())               
+    print(wc,vc,cc)'''
+        
+    
+#p8
+
+#approach 1
+'''n = int(input())
+for i in range(n):
+    a,b = input().split()
+    r = ""
+    for j in b:
+        if j not in a:
+            r = r + j
+    print(r)'''
+
+#p9
+#imp
+t = int(input())
+for i in range(t):
+    a,b = input().split()
+    b = int(b)
+    r = ""
+    for i in a:
+        k = ord(i)+b
+        if k>122:
+            k = 96+(k-122)
+            r = r + chr(k)
+        else:
+            r = r + chr(k)
+    print(r)        
+
+
+
+  #oops
+'''
+
+class cse:
+    def hello(self):
+        print("hello cse")
+class aiml:
+    def hello(self):
+        print("hello aiml")
+        ob1 = cse()
+        ob1.hello()
+'''
+
+#factorial of number
+class classa:
+    def factorial(self,n):
+        r = 1
+        for i in range(1,n+1):
+            r = r*i
+        print(r)
+ob = classa()
+ob.factorial(5)
+
+    
+
+    
+
+
+
+
+    
+    
+    
